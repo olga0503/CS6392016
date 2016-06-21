@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sendSms"
+        android:layout_marginBottom="3dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="PHONE"
+        android:id="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button1"
+        android:onClick="phone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="WEB"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:onClick="openBrowser"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="MAP"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:onClick="showbirthPlace"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="SHARE"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:onClick="shareOnclick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW ACTIVITY"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:onClick="displayNewactivity"/>
+
+</RelativeLayout>
