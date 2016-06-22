@@ -11,7 +11,7 @@ public class fragment_mainscreen extends Fragment {
 
     private Bundle savedState = null;
 
-   @Override
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_mainscreen, container, false);
         return view;

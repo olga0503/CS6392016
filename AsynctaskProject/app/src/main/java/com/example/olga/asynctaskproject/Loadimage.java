@@ -22,7 +22,7 @@ public class Loadimage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loadimage);
         img_birthplace = (ImageView)findViewById(R.id.image);
-        new LoadIm().execute("https://raw.githubusercontent.com/olga0503/CS6392016/bec8d96bce0fe1f3d9ae4cf8c187b005fc78abab/myBirthplace.jpg");
+        new LoadIm().execute("https://raw.githubusercontent.com/olga0503/CS6392016/master/AsynctaskProject/myBirthplace.jpg");
     }
 
     private class LoadIm extends AsyncTask<String, String, Bitmap> {
@@ -61,3 +61,5 @@ public class Loadimage extends AppCompatActivity {
 
 
 }
+
+
