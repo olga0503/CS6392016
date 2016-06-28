@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Your Distance in Miles"
+        android:id="@+id/description_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/miles_box"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/miles_box_design"
+        android:layout_below="@+id/description_text"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="enter a number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert To Kilometers"
+        android:id="@+id/convert_button"
+        android:onClick="convert_to_kilos"
+        android:layout_below="@+id/miles_box"
+        android:layout_alignEnd="@+id/miles_box"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/miles_box"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/error"
+        android:textColor="#f04149"
+        android:layout_below="@+id/convert_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>
