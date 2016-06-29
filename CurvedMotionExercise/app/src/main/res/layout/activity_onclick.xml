@@ -3,16 +3,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:id="@+id/scene2_layout">
-
-    >
+    android:id="@+id/main_view">
 
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:name="com.example.olga.curvedmotionexercise.activity_onclick_fragment"
         android:id="@+id/fragment"
+        tools:layout="@layout/activity_onclick_fragment"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        tools:layout="@layout/activity_onclick_fragment" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
